@@ -10,7 +10,7 @@ ENV SWIFT_PLATFORM ubuntu15.10
 
 # Install related packages
 RUN apt-get update && \
-    apt-get install -y clang wget && \
+    apt-get install -y clang wget libicu55 libxml2 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
